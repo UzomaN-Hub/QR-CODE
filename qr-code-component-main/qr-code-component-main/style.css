@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(212, 45%, 89%); /* Slate 300 */
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 90vh;
+}
+
+.box1 {
+  width: 23%;
+  height: auto;
+  border-radius: 15px;
+  background-color: hsl(0, 0%, 100%);
+  padding: 10px;
+}
+
+.bx1img {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.bx1img img {
+  width: 100%;
+}
+
+.improve {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.improve h3 {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 10px;
+  font-size: 17px;
+  text-align: center;
+  color: hsl(218, 44%, 22%);
+}
+
+.improve p {
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  color: hsl(216, 15%, 48%);
+}
+
+/* Media query for phones (up to 430px) */
+@media all and (max-width: 430px) {
+  .box {
+    width: 90%;
+  }
+
+  .box1 {
+    width: 75%;
+    padding: 5px;
+  }
+}
+
+/* Media query for tablets (431px to 770px) */
+@media all and (min-width: 431px) and (max-width: 770px) {
+  .box {
+    width: 80%;
+  }
+
+  .box1 {
+    width: 50%;
+    height: 85vh;
+    padding: 10px;
+  }
+}
